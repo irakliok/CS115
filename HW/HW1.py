@@ -6,7 +6,13 @@ import string
     I pledge my honor that I have abided by the Stevens Honor System - I.O."""
 
 def mult(x, y):
-    return x*y;
+    return x*y
+
+def add(x, y):
+    return x+y
 
 def factorial(n):
     return reduce(mult, list(range(1, n+1)))
+
+def mean(l):
+    return reduce(add,l)/len(l)
