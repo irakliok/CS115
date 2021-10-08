@@ -37,7 +37,7 @@ def sumSq(L):
     else: return L[0]**2 + sumSq(L[1:])
     
 def sumSq_alt(L, a = 0):
-    if(L[0] == []):
+    if(L == []):
         return a
     else:
         return sumSq_alt(L[1:], a + L[0]**2)
@@ -64,8 +64,26 @@ def testCopies():
 
 def copies_alt(n, ls, a = []):
     pass
+    #if(n <= 0):
+     #   return []
+    #else:
+     #return copies_alt(
+        
 
 def testCopiesAlt():
     L = ['a','b','c','d']
     assert copies_alt(3,L) == copies(3,L)
     assert copies_alt(2,L) == copies(2,L)
+    
+def ED(s1, s2):
+    if(s1 == '' or s2 == ''):
+        return max(len(s1), len(s2))
+    elif(s1[0] == s2[0]):
+         return ED(s1[1:], s2[1:])
+    else:
+        subbed = 1 + ED(s1[1:], s2[1:])
+        deleted = 1 + ED(s1[1:], s2)
+        inserted = 1 + ED(s1, s2[1:])
+        return min(subbed, deleted, inserted)
+        
+    
