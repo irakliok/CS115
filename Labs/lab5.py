@@ -7,7 +7,6 @@ Pledge:    I pledge my honor that I have abided by the Stevens Honor System.
 CS115 - Lab 5
 '''
 import time
-from cs115 import map
 
 words = []
 HITS = 10
@@ -64,7 +63,7 @@ def spam():
     print('Bye')
 
 if __name__ == '__main__':
-    f = open('3esl.txt')
+    f = open('3esl-1.txt')
     for word in f:
         words.append(word.strip())
     f.close()
