@@ -1,7 +1,11 @@
 '''
 Created on 10/22/21
 @author:   Irakli Okruashvili
+<<<<<<< HEAD
 Pledge:    I pledge my honor that I have abided by the Stevens Honor System.
+=======
+Pledge:    I pledge my honor that I have abided by the Stevens Honor System
+>>>>>>> ad7f5ebc5a5fef798807f02333ccd418dc056956
             - I.O.
 
 CS115 - Hw 6
@@ -15,6 +19,7 @@ MAX_RUN_LENGTH = 2 ** COMPRESSED_BLOCK_SIZE - 1
 
 # Do not change the variables above.
 # Write your functions here. You may use those variables in your code.
+<<<<<<< HEAD
 
 def numToBin(n):
     '''n must be non-negative.
@@ -75,3 +80,5 @@ def compression(S):
     if len(S) == 0:
         return
     return  len(compress(S)) / len(S)
+=======
+>>>>>>> ad7f5ebc5a5fef798807f02333ccd418dc056956
