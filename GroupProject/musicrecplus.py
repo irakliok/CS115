@@ -1,5 +1,6 @@
 contents = []
 
+<<<<<<< HEAD
 #A = open("musicrecplus.txt", "w+")
 #A = open("musicrecplus_ex2_a.txt")
 A = "musicrecplus_ex2_a.txt"
@@ -60,6 +61,13 @@ def loadUsers(fileName):
         userDict[userName] = bandList
     file.close()
     return userDict
+=======
+A = open("musicrecplus.txt", "w+")
+
+
+B = open("musicrecplus_ex2_a.txt")
+   
+>>>>>>> 656253809bbbebc27e94b15d4b9fc2eb4ee58278
 
 def artists():
     Artist = []
@@ -73,6 +81,7 @@ def artists():
     Artist.remove('')
     Artist.sort()
     contents = Artist
+<<<<<<< HEAD
     
 def ListConverter(n):
     '''List to Dict'''
@@ -180,3 +189,31 @@ def saveAndQuit(dict,fileName,user,preferences):
 
 
 if __name__ == "__main__": main()
+=======
+   
+
+def Username():
+    username = input("Enter your name ( put a $ symbol after your name if you wish your preferences to remain private ): ")
+    if username in A.read():
+        pass
+        #take to menu
+    else:
+        artists()
+        pass
+        #enter inicial prefrences
+
+def main():
+    Username()
+    while menu != e:
+    menu = input( """Enter a letter to choose an option :
+e - Enter preferences
+r - Get recommendations
+p - Show most popular artists
+h - How popular is the most popular
+m - Which user has the most likes
+q - Save and quit""")
+
+   
+if __name__ == "__main__":
+    main()
+>>>>>>> 656253809bbbebc27e94b15d4b9fc2eb4ee58278

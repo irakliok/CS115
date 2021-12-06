@@ -19,7 +19,10 @@ Enter a letter to choose an option:
 e - Enter preferences
 r - Get recommendations
 p - Show most popular artists
+<<<<<<< HEAD
 
+=======
+>>>>>>> 656253809bbbebc27e94b15d4b9fc2eb4ee58278
 h - How popular is the most popular
 m - Which user has the most likes
 q - Save and quit

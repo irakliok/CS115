@@ -1,14 +1,18 @@
 # Exercise from lecture 9
 
+<<<<<<< HEAD
 ''' I pledge my honor that I have abided by the Stevens Honor System
         - Irakli Okruashvili'''
 
+=======
+>>>>>>> 656253809bbbebc27e94b15d4b9fc2eb4ee58278
 def f(L):
     '''Assume L is a list of at least 3 floats.
     Return a copy of L, changed as follows.
     Each element is the average of itself and the
     two adjacent elements. But the first and last
     are unchanged.'''
+<<<<<<< HEAD
     newL = []
     for i in range(len(L)):
         if i == 0:
@@ -17,6 +21,9 @@ def f(L):
             newL[i] = L[i]
         else:
             newL.append((L[i-1] + L[i] + L[i+1])/3)
+=======
+    pass # TODO
+>>>>>>> 656253809bbbebc27e94b15d4b9fc2eb4ee58278
 
 def test_f():
     M0 = [2.0, 1.2, 3.96]
